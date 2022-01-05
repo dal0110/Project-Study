@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <Project>
         <a
-          href="https://github.com/ragnarok-forU"
+          href="https://github.com/dal0110/Project-Study"
           target="_blank"
           rel="noreferrer noopener"
         >
@@ -16,7 +16,7 @@ const Footer = () => {
           />
         </a>
       </Project>
-      <Copyright> All rights reserved by HongJinHyeok </Copyright>
+      <Copyright> All rights reserved by Ocopan </Copyright>
     </>
   );
 };

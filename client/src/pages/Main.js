@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import MainDescription1 from 'assests/MainBoard.png';
-import MainDescription2 from 'assests/MainBoard2.png';
-import MainDescription3 from 'assests/MainBoard3.png';
+import MainDescription1 from 'assests/0oco.png';
+import MainDescription2 from 'assests/0oco.png';
+import MainDescription3 from 'assests/0oco.png';
 
 const Main = () => {
   return (
     <>
       <MainTitle>
-        세상 모든 개발자의, 경영학과를 졸업한 신입개발자에 의한, 웹개발자를 위한
-        웹사이트
+        블록체인 및 암호화폐 커뮤니티 사이트 시세, 포럼등의 정보를 제공한다.
+        오코판
       </MainTitle>
       <MainBox>
         <MainImg src={MainDescription1} />

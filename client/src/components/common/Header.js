@@ -48,8 +48,8 @@ const Header = props => {
 
   useEffect(() => {
     getName();
-    console.log('안녕하세요. 프론트엔드 개발자가 되고 싶은 홍진혁입니다.');
-    console.log('https://github.com/ragnarok-forU/Project-Study');
+    console.log('안녕하세요. 오코판사이트 입니다');
+    console.log('https://github.com/dal0110/Project-Studyy');
     console.log(
       '기타 이슈사항을 이곳에 남겨주시면 감사하겠습니다. 좋은 하루 되세요 !!',
     );
@@ -95,9 +95,9 @@ const Header = props => {
         <div>
           <p className="RaiseDescription">
             <Link to="/" className="Raise">
-              Raise
+              OocPan
             </Link>
-            웹개발자, 여기로 모이다.
+            오코판!
             <SiIcons.SiRstudio className="logo" size="18px" />
           </p>
         </div>
