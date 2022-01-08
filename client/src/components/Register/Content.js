@@ -162,7 +162,7 @@ function RegisterPage(props) {
               required: true,
               minLength: true,
               minLength: 2,
-              maxLength: 4,
+              maxLength: 8,
             })}
           />
           {errors.name && (
@@ -176,6 +176,7 @@ function RegisterPage(props) {
             name="github"
             placeholder="ex) https://github.com/ragnarok-forU"
             {...register('github', {
+              required: true,
               pattern:
                 /(http(s)?:\/\/|www.)([a-z0-9\w]+\.*)+[a-z0-9]{2,4}/gi ||
                 /(http(s)?:\/\/|www.)([a-z0-9\w]+\.*)+[a-z0-9]{2,4}([\\/a-z0-9-%#?&=\w])+(\.[a-z0-9]{2,4}(\?[\\/a-z0-9-%#?&=\w]+)*)*/gi,
