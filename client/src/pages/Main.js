@@ -4,7 +4,6 @@ import MainDescription1 from 'assests/0oco.png';
 import MainDescription2 from 'assests/0oco.png';
 import MainDescription3 from 'assests/0oco.png';
 import withSize from "../Container/withSize";
-import withSize from "../Container/withSize";
 import { viewSize } from "../styles/theme";
 import Header from "../components/Global/Header";
 import CoinInfoHeader from "../components/Main/CoinInfoHeader";

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { searchCoin } from "../../Reducer/coinReducer";
+import { searchCoin } from "../../modules/reducers/coinReducer";
 import { useDispatch } from "react-redux";
 
 import CoinListItem from "./CoinListItem";

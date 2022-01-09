@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { useDispatch } from "react-redux";
-import { startInit } from "./Reducer/coinReducer";
+import { startInit } from "./modules/reducers/coinReducer";
 import loadable from '@loadable/component';
 import AppLayout from 'components/common/AppLayout';
 

@@ -5,7 +5,7 @@ import {
   changeAmountAndTotalPrice,
   changePriceAndTotalPrice,
   changeTotalPriceAndAmount,
-} from "../../Reducer/coinReducer";
+} from "../../modules/reducers/coinReducer";
 import OrderInfoTradeList from "./OrderInfoTradeList";
 
 const St = {

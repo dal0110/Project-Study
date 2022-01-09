@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import styled from "styled-components";
 import withSelectedOption from "../../Container/withSelectedOption";
 import withThemeData from "../../Container/withThemeData";
-import { changeTimeTypeAndData } from "../../Reducer/coinReducer";
+import { changeTimeTypeAndData } from "../../modules/reducers/coinReducer";
 
 const St = {
   Container: styled.div`
