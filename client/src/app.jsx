@@ -1,7 +1,5 @@
-import React, { Suspense, useEffect } from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { useDispatch } from "react-redux";
-import { startInit } from "./Reducer/coinReducer";
 import loadable from '@loadable/component';
 import AppLayout from 'components/common/AppLayout';
 
@@ -15,11 +13,6 @@ const BoardDetail = loadable(() => import('components/Board/BoardDetail'));
 const MyPage = loadable(() => import('pages/MyPage'));
 
 function App() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(startInit());
-  }, [dispatch]);
-
   return (
     <Router>
       <AppLayout>
