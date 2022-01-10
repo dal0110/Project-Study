@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { startInit } from "./modules/reducers/coinReducer";
 import loadable from '@loadable/component';
 import AppLayout from 'components/common/AppLayout';
-
+import MainRouter from "./components/Router/MainRouter";
 import Auth from 'library/utils/auth';
 
 const Main = loadable(() => import('pages/Main'));
@@ -14,33 +14,13 @@ const Board = loadable(() => import('pages/Board'));
 const BoardDetail = loadable(() => import('components/Board/BoardDetail'));
 const MyPage = loadable(() => import('pages/MyPage'));
 
-function App() {
+function AppUpbit() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(startInit());
   }, [dispatch]);
 
-  return (
-    <Router>
-      <AppLayout>
-        <Suspense fallback={<div>...loading</div>}>
-          <Switch>
-            <Route exact path="/" component={Auth(Main, false)} />
-            <Route exact path="/login" component={Auth(Login, false)} />
-            <Route exact path="/register" component={Auth(Register, false)} />
-            <Route exact path="/home" component={Auth(Main, true)} />
-            <Route exact path="/board" component={Auth(Board, true)} />
-            <Route
-              exact
-              path="/board/:boardId"
-              component={Auth(BoardDetail, true)}
-            />
-            <Route path="/mypage" component={Auth(MyPage, true)} />
-          </Switch>
-        </Suspense>
-      </AppLayout>
-    </Router>
-  );
+  return <MainRouter />;
 }
 
-export default App;
+export default AppUpbit;

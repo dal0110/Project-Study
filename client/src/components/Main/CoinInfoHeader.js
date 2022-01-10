@@ -4,6 +4,9 @@ import withSelectedCoinName from "../../Container/withSelectedCoinName";
 import withSelectedCoinPrice from "../../Container/withSelectedCoinPrice";
 import withThemeData from "../../Container/withThemeData";
 import isEqual from "react-fast-compare";
+import theme from "../../styles/theme";
+
+
 
 const St = {
   CoinInfoContainer: styled.section`

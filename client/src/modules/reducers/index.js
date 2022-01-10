@@ -19,5 +19,8 @@ const rootReducer = combineReducers({
   Loading: loadingReducer,
 });
 
+function* rootSaga() {
+  yield all([coinSaga()]);
+}
 
-export default { rootReducer, rootSaga } ;
+export { rootReducer, rootSaga } ;
